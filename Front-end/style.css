@@ -2,18 +2,24 @@ p{
     padding: 0;
     margin: 0;
 }
-body{
-    
-}
 form{
     margin-top: 10px;
     
 }
+img{
+    width: 120px;
+    height: 62px;
+    padding: 0;
+    margin: 0;
+}
 .center{
     text-align: center;
 }
+.alSide2{
+    margin: 0 5px;
+}
 .alSide{
-    margin-left: 350px;
+    margin-left: 100px;
 }
 .bl{
     display: block;

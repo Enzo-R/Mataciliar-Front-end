@@ -5,37 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
     <link rel="stylesheet" href="style.css">
-
-    <title>Monitoramento</title>
+    <link rel="stylesheet" href="navStyle.css">
+    <title>Retenção</title>
 </head>
 <body>
-    
+    <!-- cabeçalho -->
+    <nav class="navbar navbar-expand-custom navbar-mainbg">
+        <img class="navbar-brand navbar-logo" src="C:\github\Mataciliar\Icons\mataIco.png" alt="">
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Retenção</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Monitoramento.html"><i class="far fa-address-book"></i>Monitoramento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Buscar</a>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- fim cabeçalho -->
+
+    <!-- Formulario -->
     <form action="/processos-iniciais" method="post">
 
-        <div class="center">        
-            <p><img src="C:\github\Mataciliar\Front-end\mata.jpeg" alt="Mataciliar"></p>
-            <br>
-        </div>
-        <div class="col-3">
-            <b>jj</b>
-        </div>
-
         <!-- dados iniciais -->
-        <div class="col-9 center">
-            <div class="in">            
+        <div class="center col-9 ">
+            <div class="in alSide2">            
                 <label for="">NOME CIENTIFICO</label>
                 <br>
                 <input type="text">
             </div>
 
-            <div class="in">
+            <div class="in alSide2">
                 <label for="">NOME COMUM</label>
                 <br>
                 <input type="text">
             </div>
 
-            <div class="in">
+            <div class="in alSide2">
                 <label for="">SEXO</label>
                 <br>
                 <label for="">M</label>
@@ -44,29 +61,29 @@
                 <input type="radio">
             </div>
 
-            <div class="in">
+            <div class="in alSide2">
                 <label for="">IDADE</label>
                 <br>
                 <input type="number">
             </div>
 
-            <div class="in">
+            <div class="in alSide2">
                 <label class="" for="">RG</label>
                 <br>
                 <input type="text">
             </div>
-            <button>➕🐍🙊</button>
+            <button>➕</button>
             <br><br>
             <div>
-                <span >
+                <span class="alSide2">
                     <label for="">DATA DE ENTRADA</label>
                     <input type="date" name="" id="">
                 </span>
-                <span>
+                <span class="alSide2">
                     <label for="">Local</label>
                     <input type="text" name="" id="">
                 </span>
-                <span class="alSide in">                
+                <span class="alSide">                
                     <label for="">RETENÇÃO</label>
                     <input type="radio" name="" id="">
                     <label for="">DEPÓSITO</label>
@@ -82,5 +99,9 @@
     <!-- fim dados iniciais -->
     
     </form>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
+    <script  src="./script.js"></script>
 </body>
 </html>
