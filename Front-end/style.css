@@ -15,15 +15,28 @@ img{
 .center{
     text-align: center;
 }
-.alSide2{
-    margin: 0 5px;
+.alTop{
+    margin-top: 30px  ;
 }
-.alSide{
-    margin-left: 100px;
-}
-.bl{
-    display: block;
+.inb{
+    display: inline;
 }
 .in{
     display: inline-block;
+}
+
+.inputW{
+    width: 80px ;
+}
+.sciName{
+    width: 350px;
+}
+.width{
+    width: 206.67px;
+}
+input:hover{
+    background-color: #5161ce;
+}
+textarea{
+    width: 50%;
 }

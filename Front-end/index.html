@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navStyle.css">
@@ -21,14 +21,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Retenção</a>
-                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="Monitoramento.html"><i class="far fa-address-book"></i>Monitoramento</a>
+                        <a class="nav-link" href="index.html"><i class="far fa-address-book"></i>Retenção</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Buscar</a>
+                        <a class="nav-link" href="Busca.html"><i class="bi bi-search"></i>Buscar</a>
                     </li>
             </ul>
         </div>
@@ -39,63 +36,118 @@
     <form action="/processos-iniciais" method="post">
 
         <!-- dados iniciais -->
-        <div class="center col-9 ">
-            <div class="in alSide2">            
-                <label for="">NOME CIENTIFICO</label>
-                <br>
-                <input type="text">
-            </div>
+        <div class="mb-3 container col-9">
 
-            <div class="in alSide2">
-                <label for="">NOME COMUM</label>
-                <br>
-                <input type="text">
-            </div>
+            <div class="alTop">
+                <div class="in ">            
+                    <label for="">NOME CIENTIFICO</label>
+                    <br>
+                    <input class="sciName form-control" type="text">
+                </div>
 
-            <div class="in alSide2">
-                <label for="">SEXO</label>
-                <br>
-                <label for="">M</label>
-                <input type="radio">
-                <label for="">F</label>
-                <input type="radio">
-            </div>
+                <div class="in">
+                    <label for="">NOME COMUM</label>
+                    <br>
+                    <input class="form-control" type="text">
+                </div>
 
-            <div class="in alSide2">
-                <label for="">IDADE</label>
-                <br>
-                <input type="number">
-            </div>
+                <div class="in ">
+                    <label for="">SEXO</label>
+                    <br>
+                    <label for="">M</label>
+                    <input type="radio">
+                    <label for="">F</label>
+                    <input type="radio">
+                    <label for="">I</label>
+                    <input type="radio">
+                </div>
 
-            <div class="in alSide2">
-                <label class="" for="">RG</label>
-                <br>
-                <input type="text">
+                <div class="in ">
+                    <label for="">IDADE</label>
+                    <br>
+                    <input class="inputW form-control" type="number">
+                </div>
+
+                <div class="in ">
+                    <label class="" for="">RG</label>
+                    <br>
+                    <input class="inputW form-control" type="text">
+                </div>
+                <button class="btn-light"><i class="bi bi-journal-plus"></i></button>
+
+
+
+
+                <div class="alTop">
+                    <div class="in">
+                        <label for="">Trazido Por:</label>
+                        <br>
+                        <select class="form-control width" id="tragoPor" name="" >
+                            <option value=""></option>
+                            <option value="">Policia Ambiental</option>
+                            <option value="">Policia Civil</option>
+                            <option value="">Policia Militar</option>
+                            <option value="">Guarda Municipal</option>
+                            <option value="">Civil</option>
+                            <option value="">Outros</option>
+                        </select>
+                    </div>
+    
+                    <div class="in">
+                        <label for="">Local</label>
+                        <br>
+                        <input class="form-control" type="text" name="" id="" placeholder="Ex: Jundiaí-SP">
+                    </div>
+    
+                    <div class="in ">
+                        <label for="">Técnico:</label>
+                        <br>
+                        <input class="form-control" type="text" name="" id="">
+                    </div>
+                    <div class="in ">
+                        <label for="">DATA DE ENTRADA</label>
+                        <br>
+                        <input class="width form-control" id="dataW" type="date" name="" id="">
+                    </div>
+                </div>
+
+
+                <div class="in center alTop">                
+
+                </div>
+                <!-- Entrada de Arquivos -->
+                <div class="mb-3 center ">
+                    <h6>Anexar fotos e declarações</h6>
+                    <input class="form-control" type="file" name="" id="fotos"><br>
+                    <input class="form-control" type="file" name="" id="anexos">
+
+                </div>
+
+
             </div>
-            <button>➕</button>
-            <br><br>
-            <div>
-                <span class="alSide2">
-                    <label for="">DATA DE ENTRADA</label>
-                    <input type="date" name="" id="">
-                </span>
-                <span class="alSide2">
-                    <label for="">Local</label>
-                    <input type="text" name="" id="">
-                </span>
-                <span class="alSide">                
-                    <label for="">RETENÇÃO</label>
-                    <input type="radio" name="" id="">
-                    <label for="">DEPÓSITO</label>
-                    <input type="radio" name="" id="">
-                </span>
-            </div>
-            <br>                
-            <div class="mb-3 center">
+            <div class="mb-3">
                 <h5 class="form-label">Procedência</h5>      
-                <textarea class="form-control" id="Textarea" rows="3"></textarea>
-            </div>            
+                <textarea class="form-control in" id="procedencia" rows="3" placeholder="Ex: Caça, Queimada, Tráfico e etc"></textarea>
+                <textarea class="form-control in" id="procedencia" rows="3" placeholder=""></textarea>
+            </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="in col-3">
+                    <input class="form-control  " type="month" name="" id="">
+                </div>
+                <div class="in col-3">
+                    <input class="form-control  " type="month" name="" id="">
+                </div>
+                <div class="in col-3">
+                    <input class="form-control  " type="month" name="" id="">
+                </div>
+                <div class="in col-3">
+                    <input class="form-control  " type="month" name="" id="">
+                </div>
+            </div>
+        </div>
+
     <!-- fim dados iniciais -->
     
     </form>
