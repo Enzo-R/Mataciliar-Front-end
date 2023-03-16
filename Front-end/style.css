@@ -1,42 +1,40 @@
-p{
-    padding: 0;
-    margin: 0;
-}
-form{
-    margin-top: 10px;
-    
-}
-img{
-    width: 120px;
-    height: 62px;
-    padding: 0;
-    margin: 0;
-}
-.center{
-    text-align: center;
-}
-.alTop{
-    margin-top: 30px  ;
-}
-.inb{
-    display: inline;
-}
-.in{
-    display: inline-block;
+body{
+    font-family: Helvetica;
 }
 
-.inputW{
+.AlTop{
+    margin-top: 26px  ;
+}
+.RgWidthIdade{
     width: 80px ;
 }
 .sciName{
     width: 350px;
+    margin-right: 40px;
 }
-.width{
+.DataWidthSelect{
     width: 206.67px;
+}
+.fileWidthArea{
+    width: 470px;
+}
+.adcInfo{
+    width: 245px;
 }
 input:hover{
     background-color: #5161ce;
 }
+.aio{
+    margin: 0 28px;
+}
+.aioL{
+    padding-left: 33px;
+
+}
+.aioR{
+    padding-right: 33px;
+}
 textarea{
-    width: 50%;
+    height: 91px;
+
 }

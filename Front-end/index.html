@@ -33,124 +33,118 @@
     <!-- fim cabeçalho -->
 
     <!-- Formulario -->
-    <form action="/processos-iniciais" method="post">
-
-        <!-- dados iniciais -->
-        <div class="mb-3 container col-9">
-
-            <div class="alTop">
-                <div class="in ">            
-                    <label for="">NOME CIENTIFICO</label>
-                    <br>
-                    <input class="sciName form-control" type="text">
-                </div>
-
-                <div class="in">
-                    <label for="">NOME COMUM</label>
-                    <br>
-                    <input class="form-control" type="text">
-                </div>
-
-                <div class="in ">
-                    <label for="">SEXO</label>
-                    <br>
-                    <label for="">M</label>
-                    <input type="radio">
-                    <label for="">F</label>
-                    <input type="radio">
-                    <label for="">I</label>
-                    <input type="radio">
-                </div>
-
-                <div class="in ">
-                    <label for="">IDADE</label>
-                    <br>
-                    <input class="inputW form-control" type="number">
-                </div>
-
-                <div class="in ">
-                    <label class="" for="">RG</label>
-                    <br>
-                    <input class="inputW form-control" type="text">
-                </div>
+    <form action="/processos-iniciais" method="post" class="center">
+                <!-- Cadastro inicial -->
+        <div class="row g-0 justify-content-center mt-5">
+            <div class="col-auto ">
+                <label for="">NOME CIENTIFICO</label>
+                <br>
+                <input class="sciName form-control" type="text">
+            </div>
+            <div class="col-auto pe-2">
+                <label for="">NOME COMUM</label>
+                <br>
+                <input class="form-control" type="text">
+            </div>
+            <div class="col-auto pe-4 ps-4 ">
+                <label for="" >SEXO</label>
+                <br>
+                <label for="">M</label>
+                <input class="mt-2" type="radio">
+                <label for="">F</label>
+                <input class="mt-2" type="radio">
+                <label for="">I</label>
+                <input class="mt-2 f" type="radio">            
+            </div>
+            <div class="col-auto pe-3">
+                <label for="">IDADE</label>
+                <br>
+                <input class="RgWidthIdade form-control" type="number">
+            </div>
+            <div class="col-auto pe-5">
+                <label class="" for="">RG</label>
+                <br>
+                <input class="RgWidthIdade form-control" type="text">
+            </div>
+            <div class="col-auto AlTop ">
                 <button class="btn-light"><i class="bi bi-journal-plus"></i></button>
-
-
-
-
-                <div class="alTop">
-                    <div class="in">
-                        <label for="">Trazido Por:</label>
-                        <br>
-                        <select class="form-control width" id="tragoPor" name="" >
-                            <option value=""></option>
-                            <option value="">Policia Ambiental</option>
-                            <option value="">Policia Civil</option>
-                            <option value="">Policia Militar</option>
-                            <option value="">Guarda Municipal</option>
-                            <option value="">Civil</option>
-                            <option value="">Outros</option>
-                        </select>
-                    </div>
-    
-                    <div class="in">
-                        <label for="">Local</label>
-                        <br>
-                        <input class="form-control" type="text" name="" id="" placeholder="Ex: Jundiaí-SP">
-                    </div>
-    
-                    <div class="in ">
-                        <label for="">Técnico:</label>
-                        <br>
-                        <input class="form-control" type="text" name="" id="">
-                    </div>
-                    <div class="in ">
-                        <label for="">DATA DE ENTRADA</label>
-                        <br>
-                        <input class="width form-control" id="dataW" type="date" name="" id="">
-                    </div>
-                </div>
-
-
-                <div class="in center alTop">                
-
-                </div>
-                <!-- Entrada de Arquivos -->
-                <div class="mb-3 center ">
-                    <h6>Anexar fotos e declarações</h6>
-                    <input class="form-control" type="file" name="" id="fotos"><br>
-                    <input class="form-control" type="file" name="" id="anexos">
-
-                </div>
-
-
             </div>
-            <div class="mb-3">
-                <h5 class="form-label">Procedência</h5>      
-                <textarea class="form-control in" id="procedencia" rows="3" placeholder="Ex: Caça, Queimada, Tráfico e etc"></textarea>
-                <textarea class="form-control in" id="procedencia" rows="3" placeholder=""></textarea>
+        </div>           
+                <!-- Fim Cadastro inicial -->
+            
+                <!-- Informações adicionais -->
+        <div class="row g-0 justify-content-center m-4">
+            <div class="col-auto">
+                <label class="form-label" for="">Trazido Por:</label>
+                <br>
+                <select class="form-select DataWidthSelect " id="tragoPor" name="" >
+                    <option value=""></option>
+                    <option value="">Policia Ambiental</option>
+                    <option value="">Policia Civil</option>
+                    <option value="">Policia Militar</option>
+                    <option value="">Guarda Municipal</option>
+                    <option value="">Civil</option>
+                    <option value="">Outros</option>
+                </select>
+            </div>
+            <div class="col-auto aio aioL">
+                <label class="form-label" for="">Local</label>
+                <br>
+                <input class="form-control" type="text" name="" id="" placeholder="Ex: Jundiaí-SP">
+            </div>
+            <div class="col-auto aio aioR">
+                <label class="form-label" for="">Técnico:</label>
+                <br>
+                <input class="form-control" type="text" name="" id="">
+            </div>
+            <div class="col-auto ">
+                <label class="form-label" for="">DATA DE ENTRADA</label>
+                <br>
+                <input class="DataWidthSelect form-control" id="dataW" type="date" name="" id="">
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="in col-3">
-                    <input class="form-control  " type="month" name="" id="">
+                <!-- Fim Informações adicionais -->
+
+                <!-- Anexos -->
+        <div class="row g-0  mb-3 justify-content-center m-4">
+
+            <div class="col-auto aio fileWidthArea">
+                <h5 >Anexar fotos e declarações</h5>
+                <div class="input-group mb-3">
+                    <label for="fotos" class="input-group-text"><i class="bi bi-images"></i></label>
+                    <input class="form-control" type="file" name="fotos" id="fotos">    
                 </div>
-                <div class="in col-3">
-                    <input class="form-control  " type="month" name="" id="">
-                </div>
-                <div class="in col-3">
-                    <input class="form-control  " type="month" name="" id="">
-                </div>
-                <div class="in col-3">
-                    <input class="form-control  " type="month" name="" id="">
+                
+                <div class="input-group mb-3 ">
+                    <label for="anexo" class="input-group-text"><i class="bi bi-paperclip"></i></i></label>
+                    <input class="form-control" type="file" name="anexo" id="anexo">    
                 </div>
             </div>
-        </div>
 
-    <!-- fim dados iniciais -->
-    
+
+            <div class="col-auto aio fileWidthArea">
+                <h5>Procedência</h5>      
+                <textarea class="form-control" id="procedencia" rows="4" placeholder="Ex: Caça, Queimada, Tráfico e etc"></textarea>
+            </div>
+        </div>
+                <!-- Fim Anexos -->
+
+                <!-- Aréas de Texto -->
+        <div class="row g-0  mb-3 justify-content-center m-4">
+            <div class="col-auto aio fileWidthArea">
+                <h5 >Histórico</h5>
+                <textarea class="form-control" id="procedencia" rows="4" placeholder="Ex: Tempo de cativeiro, tipo de alimentação, comportamento, método de captura e transporte"></textarea>
+            </div>
+            <br>
+            <div class="col-auto aio fileWidthArea">
+                <h5>Estado de Saúde</h5>      
+                <textarea class="form-control" id="procedencia" rows="4" placeholder="Ex: Estado na entrada e alterações evidentes"></textarea>
+            </div>
+        </div>
+                <!-- Aréas de Texto -->
+
     </form>
+    
     <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
