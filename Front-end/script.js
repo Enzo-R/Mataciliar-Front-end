@@ -156,9 +156,10 @@ $(document).ready(function() {
 
   // --- Add Button --- //
 
-  function duplicate(){
-    $('#Initial')
-   }
+  $('#adcBtn').click(function(){
+    $('#Initial').append('<div class="col-auto"><label for="">NOME CIENTIFICO</label><br><input class="sciName form-control pt" type="text"></div><div class="col-auto pe-2"><label for="">NOME COMUM</label><br><input class="form-control" type="text"></div><div class="col-auto pe-4 ps-4" id="sex"><label>SEXO</label><br><label for="sex">M</label><input class="mt-2" type="radio" name="sex" value="m"><label for="sex">F</label><input class="mt-2" type="radio" name="sex" value="f"><label for="sex">I</label><input class="mt-2" type="radio" name="sex" value="i"></div><div class="col-auto pe-3"><label for="">IDADE</label><br><input class="RgWidthIdade form-control" type="number"></div><div class="col-auto pe-5"><label for="rg">RG</label><br><input class="RgWidthIdade form-control" type="text" name="rg"></div><div class="col-auto AlTop "></div>')
+  
+  })
 
   $('#tragoPor').val()
 
