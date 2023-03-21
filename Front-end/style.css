@@ -1,6 +1,6 @@
 body{
     font-family: Helvetica;
-    background: linear-gradient(#ffffff, #e0e4fb);;
+    background: linear-gradient(#ffffff, #e0e5fe);
 }
 
 .AlTop{
@@ -40,7 +40,6 @@ input:hover, input:focus ,button:hover, button:focus, textarea:hover, textarea:f
 }
 textarea{
     height: 91px;
-
 }
 
 /* Search Bar CSS*/

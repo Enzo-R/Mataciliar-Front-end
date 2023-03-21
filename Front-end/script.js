@@ -58,9 +58,9 @@ jQuery(document).ready(function($){
 
 
 
-				// Search menu //
 
-/* Search bar */
+
+  // ---Search bar--- //
 
 var resizeElements;
 
@@ -153,3 +153,13 @@ $(document).ready(function() {
     resizeElements();
   });
 });
+
+  // --- Add Button --- //
+
+  function duplicate(){
+    $('#Initial')
+   }
+
+  $('#tragoPor').val()
+
+  $('.mt-2:checked').val()
