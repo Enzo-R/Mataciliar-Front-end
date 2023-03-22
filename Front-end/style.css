@@ -41,7 +41,9 @@ input:hover, input:focus ,button:hover, button:focus, textarea:hover, textarea:f
 textarea{
     height: 91px;
 }
-
+button{
+  cursor: pointer;
+}
 
 /* Search Bar CSS*/
 

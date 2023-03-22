@@ -157,8 +157,8 @@ $(document).ready(function() {
   // --- Add Button --- //
 
   $('#adcBtn').click(function(){
-    var html = $('#Initial').html()
-    $('#Initial').append(html)
+    var html = '<div class="row g-0 justify-content-center "><div class="col-auto"><label for="">NOME CIENTIFICO</label><br><input class="sciName form-control pt" type="text"></div><div class="col-auto pe-2"><label for="">NOME COMUM</label><br><input class="form-control" type="text"></div><div class="col-auto pe-4 ps-4" id="sex"><label>SEXO</label><br><label for="sex" class="me-1 ms-1 m-1">M</label><input class="mt-2 form-check-input" type="radio" name="sex" value="m"><label for="sex" class="me-1 ms-1 m-1">F</label><input class="mt-2 form-check-input" type="radio" name="sex" value="f"><label for="sex" class="me-1 ms-1 m-1">I</label><input class="mt-2 form-check-input" type="radio" name="sex" value="i"></div><div class="col-auto pe-3"><label for="">IDADE</label><br><input class="RgWidthIdade form-control" type="number"></div><div class="col-auto pe-5"><label for="rg">RG</label><br><input class="RgWidthIdade form-control" type="text" name="rg"></div><div class="col-auto AlTop "><button type="button" id="adcBtn" class="btn-light" style="visibility: hidden;"><i class="bi bi-journal-plus"></i></button></div></div>'
+    $('#divPai').append(html)
   
   })
 
